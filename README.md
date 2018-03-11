@@ -4,6 +4,9 @@ a __Seq2Seq__ model can be built.
 
 These layers and training process are implemented with __Python__ and __Numpy__ only.
 
+Here is [an essay](https://github.com/beekbin/rnnEssay) about how to implement RNN.
+
+
 
 # Construct a Seq2Seq nerual network
 
