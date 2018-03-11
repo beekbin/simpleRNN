@@ -26,7 +26,7 @@ def construct_nn(l2=0.0):
     emb.set_lambda2(l2)
     nn.add_hidden_layer(emb)
 
-    #3. set RNN layer
+    #3. add a RNN layer
     rnn = RNNLayer("rnn1", RNN_HIDDEN_DIM, MAX_BPTT_STEPS)
     rnn.set_lambda2(l2)
     nn.add_hidden_layer(rnn)
