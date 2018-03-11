@@ -3,7 +3,7 @@
 and each book has **Plain Text UTF-8** version. So it is a ideal source to play for NLP problems.
 
 Here this python script is used to generate word sequences of sentences from the books. 
-The sequences will be fed to RNN, and RNN will try to learn to generate new words.
+The sequences will be fed to RNN, and RNN will try to learn to generate new words with similar style of the input book.
 
 
 # Usage
