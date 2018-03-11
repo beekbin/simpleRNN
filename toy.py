@@ -115,7 +115,7 @@ def main():
     nn = construct_nn(l2)
     nn.set_log_interval(2000)
 
-    train_dat, eval_dat = gen_fake_data()
+    train_dat, eval_dat = gen_toy_data()
     logging.info("train_dat=%d, eval_dat=%d", len(train_dat), len(eval_dat))
     lr = 0.008
     tao = 1500.0
