@@ -70,7 +70,6 @@ Because of the convolution layer, the training process is very slow: takes aroun
 [32, 64],l2=0.00020, activation=[None], rnn1
 [64, 10],l2=0.00000, activation=[None], word predict
 
-[10-03-2018:23:33:26.730] INFO [toy.py:119] train_dat=2, eval_dat=5
 [10-03-2018:23:33:26.741] INFO [toy.py:75] [develop] accuracy=0.1268, avg_cost=2.2649
 [10-03-2018:23:33:28.302] INFO [simple_nn.py:93] cost = 1.872
 [10-03-2018:23:33:29.911] INFO [simple_nn.py:93] cost = 0.651

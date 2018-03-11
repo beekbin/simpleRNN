@@ -116,7 +116,7 @@ def main():
     nn.set_log_interval(2000)
 
     train_dat, eval_dat = gen_toy_data()
-    logging.info("train_dat=%d, eval_dat=%d", len(train_dat), len(eval_dat))
+    logging.debug("train_dat=%d, eval_dat=%d", len(train_dat), len(eval_dat))
     lr = 0.008
     tao = 1500.0
     lrs = LRScheduler(lr, tao)
