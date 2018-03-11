@@ -1,5 +1,6 @@
 from __future__ import print_function
 from __future__ import division
+from __future__ import absolute_import
 
 import numpy as np
 import sys
@@ -7,12 +8,12 @@ import os
 import logging
 import random
 
-from nn_layer import InputLayer
-from softmax_layer import SoftmaxOutputLayer
-from rnn_layer import RNNLayer
-from simple_nn import NNetwork
-from embedding_layer import EmbeddingLayer
-from util import LRScheduler
+from nn.nn_layer import InputLayer
+from nn.softmax_layer import SoftmaxOutputLayer
+from nn.rnn_layer import RNNLayer
+from nn.simple_nn import NNetwork
+from nn.embedding_layer import EmbeddingLayer
+from nn.util import LRScheduler
 
 WORD_DIM = 32
 VOC_SIZE = 10
