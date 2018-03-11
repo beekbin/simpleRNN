@@ -89,7 +89,7 @@ def train_it(nn, train_data, lr):
 
     return
 
-def gen_fake_data():
+def gen_toy_data():
     #1. generate tranining data
     train_dat = []
     train_dat.append([1,3,5,7,1,3,5,7,1,3,5,7,1,3,5,7,1,3])
