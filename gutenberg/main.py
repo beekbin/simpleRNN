@@ -143,8 +143,14 @@ def main(args):
     basedir = "./data/"
     corpfname = "../data/alice.txt"
     #corpfname = "../data/whitman-leaves.txt"
+    prefix = 'alice'
+    if len(sys.argv) > 1:
+        corpfname = sys.argv[1]
+        bname = os.path.basename(corpfname)
+        prefix, _ = os.path.splitext(bname)
 
-    fnames = ResultFnames(basedir, corpfname, 'alice')
+    logging.info("input fname=%s, prefix=%s", corpfname, prefix)
+    fnames = ResultFnames(basedir, corpfname, prefix)
     #fnames = ResultFnames(basedir, corpfname, 'whitman')
     logging.info("fnames: %s", fnames)
 
@@ -156,8 +162,6 @@ def main(args):
 
 def setup_log():
     logfile = "./log/train.%s.log" % (os.getpid())
-    if len(sys.argv) > 1:
-        logfile = sys.argv[1]
     print("logfile=%s"%(logfile))
     logging.basicConfig(#filename=logfile
             format='[%(asctime)s.%(msecs)d] %(levelname)-s [%(filename)s:%(lineno)d] %(message)s',
