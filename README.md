@@ -5,7 +5,7 @@ This simple nerual networks has an embedding layer, RNN layer, FC(fully connecte
 With these layers, a __Seq2Seq__ model is built to learn and predict sequences of characters.
 
 These layers and training process are implemented from scratch with __Python__ and __Numpy__ only.
-Here is [an essay](https://github.com/beekbin/rnnEssay) about how to implement RNN.
+I also wrote [an essay](https://github.com/beekbin/rnnEssay) about how to implement RNN.
 
 
 
